@@ -1,3 +1,7 @@
+# Bayesian Offline-to-Online Reinforcement Learning
+
+## Requirements:
+
 First, please install the corresponding dependencies: 
 
 1. [Mujoco 1.50](http://www.mujoco.org/).
@@ -12,13 +16,15 @@ First, please install the corresponding dependencies:
 
 6. Python 3.6.
 
+## Run
+
 For the offline training, please run: 
 
 ```
 python3 main.py --save_model --env hopper-medium-v2
 ```
 
-	For the online finetuning, please run:
+For the online finetuning, please run:
 
 ```
 python3 finetune.py --load_model --offdataset --env hopper-medium-v2
